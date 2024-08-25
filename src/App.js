@@ -24,7 +24,7 @@ function App() {
             const parsedInput = JSON.parse(jsonInput);
             setIsValidJson(true);
             
-            const res = await axios.post('http://localhost:5000/bfhl', parsedInput);
+            const res = await axios.post('https://backend-six-sable-17.vercel.app/bfhl', parsedInput);
             setResponse(res.data);
         } catch (error) {
             setIsValidJson(false);
